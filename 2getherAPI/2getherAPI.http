@@ -1,0 +1,9 @@
+@_2getherAPI_HostAddress = http://localhost:5294
+
+GET {{_2getherAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+
+
+
+###
