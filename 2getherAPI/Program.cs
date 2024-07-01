@@ -19,6 +19,13 @@ builder.Services.AddDbContext<TravelAgencyContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//IMPORTANT
+//adding json options to preserve reference loop reiser -> reiseziel -> reise -> reiseziel -> ....
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

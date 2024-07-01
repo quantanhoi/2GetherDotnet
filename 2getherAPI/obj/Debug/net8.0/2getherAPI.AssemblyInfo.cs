@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("2getherAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a1d8e3f3a503f430f89bd7e22679b6621e32de2")]
 [assembly: System.Reflection.AssemblyProductAttribute("2getherAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("2getherAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,8 @@ public class Reiseziel
 {
     [Key]
     public int rz_id { get; set; }
-    public int z_id { get; set; }
+    
+    public int r_id { get; set; }
     
     [Column("rz_name", TypeName= "varchar(254)")]
     public string rz_Name { get; set; }
@@ -19,4 +20,9 @@ public class Reiseziel
     
     [Column("rz_bild", TypeName= "varchar(254)")]
     public string rz_Bild { get; set; }
+    
+    
+    
+    [ForeignKey("r_id")]
+    public Reise Reise { get; set; }
 }

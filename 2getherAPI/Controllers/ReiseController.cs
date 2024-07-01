@@ -20,6 +20,9 @@ public class ReiseController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Reise>>> GetReises()
     {
-        return await _context.Reises.ToListAsync();
+        return await _context.Reises
+            .Include(r => r.Reiseziels)
+            .Include(r => r.Teilnehmers)
+            .ToListAsync();
     }
 }
